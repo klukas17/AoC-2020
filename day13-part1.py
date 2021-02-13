@@ -21,7 +21,7 @@ def task():
     allBuses = []
 
     for ID in IDs:
-        wait = ID - timestamp % ID
+        wait = ID - timestamp % ID if timestamp % ID != 0 else 0
         bus = Bus(ID, wait)
         allBuses.append(bus)
 
