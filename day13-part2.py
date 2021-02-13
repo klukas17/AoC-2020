@@ -18,7 +18,7 @@ def task():
     for el in IDs:
         t += 1
         if el:
-            modulos.append((el, el - t if t != 0 else 0))
+            modulos.append((el, el - (t % el) if (t % el) != 0 else 0))
 
     modulos.sort()
     modulos.reverse()
