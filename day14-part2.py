@@ -75,11 +75,7 @@ def task():
             command = MemoryLocation.MASK, mask
             commands.append(command)
 
-    step = -1
-
     for command in commands:
-        
-        step += 1
         
         if command[0] == MemoryLocation.MASK:
             mask = command[1] 
