@@ -60,18 +60,11 @@ def task():
     rules[11] = [[42, 31], [42, 11, 31]]
 
     valid = 0
-    count = 0
-    complete = len(messages)
 
-    print(str(count) + "/" + str(complete))
-    
     for message in messages:
 
         if validZero(message):
             valid += 1
-
-        count += 1
-        print(str(count) + "/" + str(complete))
 
     return valid
 
