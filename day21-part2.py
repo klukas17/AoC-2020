@@ -70,8 +70,6 @@ def task():
             if innerFlag:
                 break
 
-    print("tu sam")
-
     allergenList = [allergen[0] for allergen in allergenPairings]
     allergenList.sort()
 
